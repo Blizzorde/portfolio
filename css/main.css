@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+:root {
+  --secondary-color: #171717;
+  --primary-color: #fd853a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVIGATION */
+.nav-wrapper {
+  padding: 2rem 3rem;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.05rem 1rem;
+  border-radius: 4rem;
+  justify-content: space-between;
+}
+
+.nav-link {
+  border-radius: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 1.25rem 2rem;
+}
+
+.nav-link.active {
+  background-color: var(--primary-color);
+}
+
+.nav-link-logo .logo {
+  background-color: var(--primary-color);
+  width: 4rem;
+  height: auto;
+  border-radius: 4rem;
+  padding: 0.25rem;
+  border: 2px solid white;
+}
+
+.nav-link-logo {
+  padding: 0.25rem;
+}
+
+/* MAIN PAGE STYLING */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.landing-container {
+  background: url(../img/bg.png);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+}
+
+.welcome-message-container {
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-picture-container {
+  flex-basis: 45%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: end;
+}
+
+.portrait-img-wrapper {
+  width: 30rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.portrait-image {
+  width: 100%;
+  z-index: 9999;
+}
+.portrait-img-wrapper::after {
+  content: "";
+  --circle-radius: 40rem;
+  width: var(--circle-radius);
+  height: var(--circle-radius);
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.pill-welcome {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-family: "Inter", sans-serif;
+
+  padding: 0.5rem 1.5rem;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4em;
+}
+
+/* BOOSTER CLASSES */
+
+.color-sec {
+  color: var(--primary-color);
+}
