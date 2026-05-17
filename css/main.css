@@ -194,6 +194,8 @@ a {
 }
 
 .landing-container::after {
+  pointer-events: none;
+  cursor: none;
   position: absolute;
   content: "";
   aspect-ratio: 960/100;
