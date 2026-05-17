@@ -27,8 +27,17 @@ a {
 .divider {
   aspect-ratio: 960/100;
   background: no-repeat center;
-  background-image: url(../img/test.svg);
   background-size: cover;
+}
+
+.divider.orange-blob {
+  background-image: url(../img/test.svg);
+}
+.divider.gray-blocks {
+  background-image: url(../img/skillset-divider.svg);
+}
+.divider.gray-blocks-inv {
+  background-image: url(../img/skillset-divider-inverted.svg);
 }
 
 .section-title {
