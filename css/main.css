@@ -52,9 +52,20 @@ a {
   padding: 0;
 }
 
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title-wrapper {
   position: relative;
   padding: 1rem 0;
+}
+
+.title-more-action {
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 .section-subheadline,
