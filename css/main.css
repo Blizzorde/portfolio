@@ -45,7 +45,37 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-family: "Ubuntu", "sans-serif";
-  padding: 1.5rem;
+  padding: 1.5rem 0rem;
+}
+.section-title.left {
+  text-align: left;
+  padding: 0;
+}
+
+.title-wrapper {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.section-subheadline,
+.section-superheadline {
+  text-transform: uppercase;
+  font-family: "Ubuntu", "sans-serif";
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--primary-color);
+}
+.section-subheadline::before,
+.section-superheadline::before {
+  position: relative;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--primary-color);
+  display: inline-block;
 }
 /* NAVIGATION */
 .nav-wrapper {
@@ -105,21 +135,19 @@ a {
   flex-direction: column;
   position: relative;
 }
-/* 
-.landing-container::after,
-.landing-container::before {
+
+.landing-container::after {
   position: absolute;
   content: "";
-
-  --accent-cricle: 5rem;
-  width: var(--accent-cricle);
-  height: var(--accent-cricle);
-  background-color: var(--primary-color);
-  border-radius: 40px; */
-/* Tbh im unsure if this works on all browsers */
-/* TODO: Check if it works on Teachers browser - Safari */
-/* corner-shape: scoop;
-} */
+  aspect-ratio: 960/100;
+  bottom: 0;
+  left: 0;
+  background: no-repeat center;
+  background-image: url(../img/transition-hero-divider.svg);
+  background-size: cover;
+  width: 100%;
+  z-index: 20;
+}
 
 /* .landing-container::after {
   bottom: 0;
@@ -165,7 +193,7 @@ a {
 
 .portrait-image {
   width: 100%;
-  z-index: 9999;
+  z-index: 100;
 }
 .portrait-img-wrapper::after {
   content: "";
@@ -240,7 +268,7 @@ a {
 .current-position-container {
   /* background: linear-gradient(var(--primary-color), #fff); */
 
-  padding: 0rem 5rem 5rem 5rem;
+  padding: 0rem 5rem 0rem 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -278,7 +306,7 @@ a {
 /* SKILLSET SECTION */
 
 .skillset-container {
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
   background: no-repeat center;
   background-image: url(../img/skillset-bg.svg);
   background-size: cover;
@@ -434,7 +462,7 @@ a {
   position: absolute;
   content: "";
   width: 2px;
-  height: 110%;
+  height: 150%;
   top: 0;
   right: 0;
   background-color: rgb(195, 195, 195);
@@ -477,6 +505,69 @@ a {
   font-family: "Ubuntu", "sans-serif";
 }
 
+/* PROJECTS SECTION */
+
+.projects-container {
+  padding: 5rem;
+}
+
+.projects-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: url(../img/natin-test.jpg) center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: linear-gradient(transparent, #000);
+  padding: 1rem;
+}
+
+.project-details .title {
+  color: white;
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.project-details .description {
+  color: var(--card-dark-text);
+  font-size: 0.75rem;
+}
+
+.project-details .type {
+  text-transform: uppercase;
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  color: white;
+  background-color: var(--primary-color);
+  display: inline;
+  border-radius: 2rem;
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
+.project-card:hover {
+  transform: scale(1.2);
+}
+.project-card:hover {
+  transform: scale(0.9);
+}
 /* BOOSTER CLASSES */
 
 .color-sec {
