@@ -520,6 +520,7 @@ a {
 
 .projects-container {
   padding: 5rem;
+  background: url(../img/bg.png);
 }
 
 .projects-cards-wrapper {
