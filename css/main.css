@@ -85,7 +85,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .landing-container {
@@ -264,6 +264,124 @@ a {
 }
 .info-card .description {
   color: var(--card-dark-text);
+}
+
+/* SKILLSET SECTION */
+
+.skillset-container {
+  padding: 10rem 5rem;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.skillset-circle {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  --skillset-circle: 30rem;
+  width: var(--skillset-circle);
+  height: var(--skillset-circle);
+  border-radius: var(--skillset-circle);
+}
+
+.skill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: linear-gradient(var(--primary-color), var(--primary-color), #fff);
+  color: #fff;
+  font-weight: 700;
+  --skill-circle: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--skill-circle);
+  width: var(--skill-circle);
+  height: var(--skill-circle);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid var(--secondary-color);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.skill:hover {
+  --skill-circle: 10rem;
+  width: var(--skill-circle);
+  height: var(--skill-circle);
+  animation-play-state: paused;
+}
+
+.skill.deg0 {
+  transform: translateX(-50%) translateY(-50%)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg45 {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg90 {
+  transform: translateX(-50%) translateY(-50%) rotate(90deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg135 {
+  transform: translateX(-50%) translateY(-50%) rotate(135deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg180 {
+  transform: translateX(-50%) translateY(-50%) rotate(180deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg225 {
+  transform: translateX(-50%) translateY(-50%) rotate(225deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg270 {
+  transform: translateX(-50%) translateY(-50%) rotate(270deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skill.deg315 {
+  transform: translateX(-50%) translateY(-50%) rotate(315deg)
+    translateY(calc(var(--skillset-circle) / -2));
+}
+
+.skillset-orbit {
+  animation: spin 10s linear infinite;
+}
+
+.skillset-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* BOOSTER CLASSES */
