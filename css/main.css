@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* CSS RESET */
 *,
@@ -7,8 +7,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 700; */
 }
 
 :root {
@@ -41,6 +41,8 @@ a {
   border-radius: 2rem;
   font-family: "Ubuntu", sans-serif;
   padding: 1.25rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .nav-link.active {
@@ -127,9 +129,11 @@ a {
 
 .pill-welcome {
   border: 1px solid black;
+  background-color: white;
   padding: 1rem;
   border-radius: 2rem;
   font-family: "Inter", sans-serif;
+  font-weight: 700;
 
   padding: 0.5rem 1.5rem;
 }
@@ -139,6 +143,42 @@ a {
   flex-direction: column;
   align-items: center;
   font-size: 4em;
+}
+
+.message-container > div {
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+}
+
+.small-intro {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: normal;
+  padding: 1rem 10rem;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.hero-cta-cont {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.cta-link {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
+.cta-link.primary {
+  background-color: var(--primary-color);
+  font-weight: 700;
+}
+.cta-link.secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 /* BOOSTER CLASSES */
