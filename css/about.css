@@ -1,0 +1,56 @@
+/* MAIN PAGE STYLING (ABOUT) */
+
+.main-container.about {
+  background: no-repeat center;
+  background-image: url(../img/bg-about-main.svg);
+  aspect-ratio: 960/540;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.start-intro-section {
+  display: flex;
+  flex: 1;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.intro-cont {
+  flex-basis: 60%;
+}
+
+.intro-img-cont {
+  flex-basis: 40%;
+}
+
+.portrait-cont-intro {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  border-radius: 5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.portrait-img-cont-intro {
+  width: 100%;
+}
+
+.init-welcome-message-about {
+  padding: 1rem 2rem;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.introduction-message {
+  padding: 3rem 2rem;
+}
+
+.about-divider {
+  background-image: url(../img/about-divider.svg);
+  background-position: top;
+  aspect-ratio: 960/150;
+}

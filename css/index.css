@@ -435,9 +435,3 @@
   align-items: center;
   gap: 1rem;
 }
-
-/* BOOSTER CLASSES */
-
-.color-sec {
-  color: var(--primary-color);
-}
