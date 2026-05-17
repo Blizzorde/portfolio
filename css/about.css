@@ -47,10 +47,72 @@
 
 .introduction-message {
   padding: 3rem 2rem;
+  line-height: 1.5rem;
 }
 
 .about-divider {
   background-image: url(../img/about-divider.svg);
   background-position: top;
   aspect-ratio: 960/150;
+}
+
+/* MY PATH SECTION */
+
+.my-path-section {
+  padding: 0 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.my-path-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.my-path-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.origin-container {
+  flex-basis: 75%;
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  border: 1px solid gray;
+}
+
+.philosophy-container {
+  flex-basis: 50%;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 3rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.origin-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: 171717;
+  padding: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.philosophy-container .icon {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.philosophy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--card-dark-text);
+  padding: 1rem 0;
+  line-height: 1.5rem;
 }

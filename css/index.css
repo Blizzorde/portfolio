@@ -132,12 +132,14 @@
 .info-card .title {
   font-family: "Ubuntu", "sans-serif";
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .info-card .icon {
   color: var(--primary-color);
 }
 .info-card .description {
+  line-height: 1.5rem;
+
   color: var(--card-dark-text);
 }
 

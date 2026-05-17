@@ -60,6 +60,9 @@ a {
   text-align: left;
   padding: 0;
 }
+.section-title.inverted {
+  color: white;
+}
 
 .title-container {
   display: flex;
