@@ -14,6 +14,8 @@
 :root {
   --secondary-color: #171717;
   --primary-color: #fd853a;
+  --card-dark-bg: #2a2a2a;
+  --card-dark-text: #e5e2e1;
 }
 
 a {
@@ -21,6 +23,21 @@ a {
   color: inherit;
 }
 
+/* GENERAL */
+.divider {
+  aspect-ratio: 960/100;
+  background: no-repeat center;
+  background-image: url(../img/test.svg);
+  background-size: cover;
+}
+
+.section-title {
+  color: var(--secondary-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Ubuntu", "sans-serif";
+  padding: 1.5rem;
+}
 /* NAVIGATION */
 .nav-wrapper {
   padding: 2rem 3rem;
@@ -77,7 +94,35 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+/* 
+.landing-container::after,
+.landing-container::before {
+  position: absolute;
+  content: "";
+
+  --accent-cricle: 5rem;
+  width: var(--accent-cricle);
+  height: var(--accent-cricle);
+  background-color: var(--primary-color);
+  border-radius: 40px; */
+/* Tbh im unsure if this works on all browsers */
+/* TODO: Check if it works on Teachers browser - Safari */
+/* corner-shape: scoop;
+} */
+
+/* .landing-container::after {
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%) translateY(50%);
+}
+
+.landing-container::before {
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(50%);
+} */
 
 .hero-section {
   display: flex;
@@ -179,6 +224,46 @@ a {
   background-color: transparent;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+
+/* CURRENT POSITION SECTION */
+
+.current-position-container {
+  /* background: linear-gradient(var(--primary-color), #fff); */
+
+  padding: 0rem 5rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.info-card {
+  background-color: var(--card-dark-bg);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-basis: 50%;
+}
+
+.info-card .title {
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.info-card .icon {
+  color: var(--primary-color);
+}
+.info-card .description {
+  color: var(--card-dark-text);
 }
 
 /* BOOSTER CLASSES */
