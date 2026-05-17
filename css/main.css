@@ -279,7 +279,9 @@ a {
 
 .skillset-container {
   padding: 10rem 5rem;
-  background-color: #f7f7f7;
+  background: no-repeat center;
+  background-image: url(../img/skillset-bg.svg);
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
@@ -391,6 +393,88 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* JOURNEY SECTION */
+
+.journey-container {
+  padding: 0rem 5rem 5rem 5rem;
+}
+
+.timeline-container {
+  padding: 0rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: yellow; */
+}
+
+.timeline-element {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.timeline-time {
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+  font-family: "Ubuntu", "sans-serif";
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  /* background-color: red; */
+}
+
+.timeline-time.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.timeline-time::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 110%;
+  top: 0;
+  right: 0;
+  background-color: rgb(195, 195, 195);
+  transform: translateY(-10%) translateX(50%);
+  z-index: 2;
+  /* background-color: red; */
+}
+
+.timeline-time::before {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  transform: translateX(50%);
+  border-radius: 2rem;
+  z-index: 3;
+
+  /* background-color: red; */
+}
+.timeline-details {
+  flex-basis: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", "sans-serif";
+}
+
+.timeline-extra {
+  font-size: 0.5rem;
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Ubuntu", "sans-serif";
 }
 
 /* BOOSTER CLASSES */
