@@ -29,6 +29,7 @@ const projects = [
 function createHomeCard(project) {
   const card = document.createElement("div");
   card.classList.add("project-card");
+  card.classList.add("animate");
   card.style.backgroundImage = `url('${project.image}')`; // JS sets it, not HTML
   card.addEventListener("click", () => {
     if (!project.link || project.link === "#") {
@@ -52,6 +53,7 @@ function createHomeCard(project) {
 function createWorkCard(project) {
   const card = document.createElement("div");
   card.classList.add("project-card");
+  card.classList.add("animate");
   card.style.backgroundImage = `url('${project.image}')`;
   card.addEventListener("click", () => {
     if (!project.link || project.link === "#") {
