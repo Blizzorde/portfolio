@@ -116,3 +116,106 @@
   padding: 1rem 0;
   line-height: 1.5rem;
 }
+
+/* ACADEMY / CORE VALUES STANDINGS SECTION */
+.acad-stand-section {
+  display: flex;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+.academic-section,
+.core-values-section {
+  flex-basis: 50%;
+  padding: 2rem;
+}
+
+.acad-cards {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.acad-card {
+  padding: 1rem;
+  border: 1px solid gray;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.acad-details {
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.acad-card .icon {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acad-card .icon-wrapper {
+  background-color: var(--primary-accent-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  display: flex;
+}
+
+.acad-title {
+  font: "Ubuntu", "sans-serif";
+  font-weight: 700;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.acad-extra {
+  font-size: 0.75rem;
+}
+
+.icon-title .icon {
+  color: var(--primary-color);
+}
+
+.core-cards {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.core-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--card-dark-text);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.core-card .icon {
+  color: var(--primary-color);
+}
+
+.core-card .title {
+  font-weight: 700;
+  font-family: "Ubuntu", "sans-serif";
+}
+
+.core-card .description {
+  color: gray;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
