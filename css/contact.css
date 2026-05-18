@@ -119,3 +119,32 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Large desktops */
+@media (max-width: 1200px) {
+}
+
+/* Tablets landscape / small desktops */
+@media (max-width: 1024px) {
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+}
+
+/* Mid Tablet - Mobile */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .callout-card .val {
+    font-size: 0.8rem;
+  }
+}
