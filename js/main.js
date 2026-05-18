@@ -3,7 +3,12 @@ const navLinks = document.querySelectorAll(".nav-link");
 navLinks.forEach((link) => {
   link.classList.remove("active");
 
-  if (link.href.includes(window.location.pathname.split("/").pop())) {
+  if (
+    (link.href.includes(window.location.pathname.split("/").pop()) &&
+      window.location.pathname.split("/").pop() != "") ||
+    (window.location.pathname.split("/").pop() == "" &&
+      link.href.includes("/index.html"))
+  ) {
     link.classList.add("active");
   }
 });
