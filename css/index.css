@@ -157,7 +157,6 @@
 }
 
 .skillset-circle {
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +191,11 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: linear-gradient(var(--primary-color), var(--primary-color), #fff);
+  background: linear-gradient(
+    var(--primary-color),
+    var(--primary-color),
+    #f1f1f1
+  );
   color: #fff;
   font-weight: 700;
   --skill-circle: 8.5rem;
@@ -284,7 +287,7 @@
 }
 
 .timeline-container {
-  padding: 0rem 15rem;
+  padding: 0rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -398,4 +401,203 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+/* Large desktops */
+@media (max-width: 1200px) {
+  .timeline-time {
+    flex-basis: 30%;
+  }
+
+  .timeline-details {
+    flex-basis: 70%;
+  }
+}
+
+/* Tablets landscape / small desktops */
+@media (max-width: 1024px) {
+  .small-intro {
+    padding: 1rem 3rem;
+  }
+
+  .portrait-img-wrapper {
+    width: 25rem;
+  }
+
+  .portrait-img-wrapper::after {
+    --circle-radius: 30rem;
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+  }
+
+  .message-container {
+    font-size: 3em;
+  }
+
+  .timeline-container {
+    padding: 0rem 5rem;
+  }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+  .message-container {
+    font-size: 2em;
+  }
+  .portrait-img-wrapper {
+    width: 20rem;
+  }
+  .portrait-img-wrapper::after {
+    --circle-radius: 22rem;
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+  }
+  .small-intro {
+    font-size: 0.8em;
+    padding: 1rem 1.5rem;
+  }
+
+  .cta-link {
+    font-size: 0.7em;
+  }
+
+  .current-position-container {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .info-card .description {
+    font-size: 0.8em;
+  }
+
+  .info-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .card-container {
+    gap: 1rem;
+  }
+
+  .timeline-container {
+    padding: 1rem 0rem;
+  }
+}
+
+/* Mid Tablet - Mobile */
+@media (max-width: 600px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .small-intro {
+    font-size: 0.8em;
+    padding: 1rem 4rem;
+  }
+
+  .welcome-message-container {
+    padding: 3rem 0 7rem 0;
+  }
+
+  .personal-picture-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .info-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .skillset-circle {
+    --skillset-circle: 20rem;
+    width: var(--skillset-circle);
+    height: var(--skillset-circle);
+    border-radius: var(--skillset-circle);
+  }
+
+  .skill {
+    font-size: 0.8em;
+    --skill-circle: 8.5rem;
+    border-radius: var(--skill-circle);
+    min-width: var(--skill-circle);
+    min-height: 2rem;
+    padding: 0;
+  }
+
+  .journey-container {
+    padding: 0rem 1.5rem 1rem 1.5rem;
+  }
+
+  .timeline-time {
+    font-size: 0.7em;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-details .timeline {
+    font-size: 0.8em;
+  }
+
+  .timeline-time::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 130%;
+    top: 0;
+    right: 0;
+    background-color: rgb(195, 195, 195);
+    transform: translateY(-3%) translateX(50%);
+    z-index: 2;
+    /* background-color: red; */
+  }
+
+  .projects-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects-container {
+    padding: 2rem;
+    background: url(../img/bg.png);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .skillset-circle {
+    --skillset-circle: 18rem;
+    width: var(--skillset-circle);
+    height: var(--skillset-circle);
+    border-radius: var(--skillset-circle);
+  }
+
+  .skill {
+    font-size: 0.8em;
+    --skill-circle: 8.5rem;
+    border-radius: var(--skill-circle);
+    min-width: var(--skill-circle);
+    min-height: 2rem;
+    padding: 0;
+  }
+
+  .skillset-container {
+    padding: 5rem 0rem;
+  }
+
+  .timeline-time {
+    padding: 0rem 1rem;
+  }
+
+  .cta-section-container {
+    padding: 2rem;
+  }
+
+  .cta-section-container .title {
+    font-size: 1.75rem;
+  }
 }

@@ -455,6 +455,15 @@ a {
   background-color: var(--primary-color);
 }
 
+/* Large desktops */
+@media (max-width: 1200px) {
+}
+
+/* Tablets landscape / small desktops */
+@media (max-width: 1024px) {
+}
+
+/* Tablets portrait */
 @media (max-width: 768px) {
   /* hide desktop links */
   .nav-link {
@@ -470,4 +479,19 @@ a {
   .nav-link-logo {
     display: block;
   }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mid Tablet - Mobile */
+@media (max-width: 600px) {
+}
+
+/* Mobile */
+@media (max-width: 480px) {
 }
