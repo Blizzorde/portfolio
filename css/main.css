@@ -402,3 +402,72 @@ a {
 .animate:nth-child(4) {
   transition-delay: 0.4s;
 }
+
+/* hide hamburger on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+/* mobile menu — hidden by default */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  overflow: hidden;
+
+  position: fixed;
+  top: 7rem; /* just below the navbar */
+  left: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-link {
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.mobile-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-link:hover {
+  background-color: var(--primary-color);
+}
+
+.mobile-link.active {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  /* hide desktop links */
+  .nav-link {
+    display: none;
+  }
+
+  /* show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* keep logo visible */
+  .nav-link-logo {
+    display: block;
+  }
+}
