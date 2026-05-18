@@ -1,0 +1,26 @@
+/* MAIN PAGE STYLING / WORK */
+
+.main-container.work {
+  background-image: url(../img/bg.png);
+  background-repeat: repeat;
+  background-size: contain;
+}
+.work-portfolio-section {
+  padding: 0 5rem;
+}
+
+.work-portfolio-section .projects-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.title-cont {
+  width: 65%;
+}
+
+.title-cont .description {
+  padding: 1rem 0;
+  line-height: 1.25rem;
+}

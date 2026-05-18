@@ -268,3 +268,70 @@ a {
     rgba(255, 255, 255, 0.3)
   );
 }
+
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: url(../img/natin-test.jpg) center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: linear-gradient(transparent, #000);
+  padding: 1rem;
+}
+
+.project-details .title {
+  color: white;
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.project-details .description {
+  color: var(--card-dark-text);
+  font-size: 0.75rem;
+}
+
+.project-details .type {
+  text-transform: uppercase;
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+  color: white;
+  background-color: var(--primary-color);
+  display: inline;
+  border-radius: 2rem;
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
+.project-details .tags {
+  color: white;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.project-details .tag {
+  border: 1px solid white;
+  padding: 0.25rem 1rem;
+  border-radius: 4rem;
+  font-size: 0.8rem;
+}
+
+.project-card:hover {
+  transform: scale(1.2);
+}
+.project-card:hover {
+  transform: scale(0.9);
+}
