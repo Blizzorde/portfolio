@@ -94,6 +94,7 @@ function renderWorkProjects(containerSelector) {
   // coming soon card
   const comingSoon = document.createElement("div");
   comingSoon.classList.add("project-card");
+  comingSoon.classList.add("animate");
   comingSoon.style.backgroundColor = "gray";
   comingSoon.addEventListener("click", () => {
     showToast("Coming Soon!");
