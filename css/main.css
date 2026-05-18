@@ -21,6 +21,10 @@
 
 /* GENERAL */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   min-height: 100vh;
   width: 100%;
@@ -334,4 +338,27 @@ a {
 }
 .project-card:hover {
   transform: scale(0.9);
+}
+
+.toast {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.85rem;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -6,7 +6,7 @@ const projects = [
       "Personal portfolio website showcasing my projects, skills, and experience in ICT and software development.",
     image: "./img/portfolio.png",
     tags: ["HTML", "CSS", "JS"],
-    link: "#",
+    link: "./index.html#hero-landing",
   },
   {
     title: "NATIN LVS",
@@ -30,7 +30,13 @@ function createHomeCard(project) {
   const card = document.createElement("div");
   card.classList.add("project-card");
   card.style.backgroundImage = `url('${project.image}')`; // JS sets it, not HTML
-  card.addEventListener("click", () => (window.location.href = project.link));
+  card.addEventListener("click", () => {
+    if (!project.link || project.link === "#") {
+      showToast("Coming Soon! Project link not available yet");
+      return;
+    }
+    window.location.href = project.link;
+  });
 
   card.innerHTML = `
     <div class="project-details">
@@ -47,7 +53,13 @@ function createWorkCard(project) {
   const card = document.createElement("div");
   card.classList.add("project-card");
   card.style.backgroundImage = `url('${project.image}')`;
-  card.addEventListener("click", () => (window.location.href = project.link));
+  card.addEventListener("click", () => {
+    if (!project.link || project.link === "#") {
+      showToast("Coming Soon! Project link not available yet");
+      return;
+    }
+    window.location.href = project.link;
+  });
 
   card.innerHTML = `
     <div class="project-details">
@@ -80,6 +92,10 @@ function renderWorkProjects(containerSelector) {
   // coming soon card
   const comingSoon = document.createElement("div");
   comingSoon.classList.add("project-card");
+  comingSoon.style.backgroundColor = "gray";
+  comingSoon.addEventListener("click", () => {
+    showToast("Coming Soon!");
+  });
   comingSoon.innerHTML = `<div class="project-details"><div class="title">Coming Soon...</div></div>`;
   container.appendChild(comingSoon);
 }
