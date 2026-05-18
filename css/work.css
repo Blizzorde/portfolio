@@ -31,7 +31,48 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
+  padding: 10rem 1rem;
   border-top: 1px solid var(--card-dark-text);
   border-bottom: 1px solid var(--card-dark-text);
+}
+
+.cta-work .title,
+.cta-work .description {
+  text-align: center;
+}
+
+/* Large desktops */
+@media (max-width: 1200px) {
+}
+
+/* Tablets landscape / small desktops */
+@media (max-width: 1024px) {
+  .title-cont {
+    width: 100%;
+  }
+
+  .work-portfolio-section .projects-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+}
+
+/* Mid Tablet - Mobile */
+@media (max-width: 600px) {
+  .work-portfolio-section {
+    padding: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .work-portfolio-section {
+    padding: 2rem;
+  }
 }
