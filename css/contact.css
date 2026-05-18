@@ -1,6 +1,6 @@
 /* MAIN PAGE STYLING / CONTACT */
 .main-container.contact {
-  background-image: url(../img/contact.svg);
+  background-image: url(../img/backgrounds/contact.svg);
   background-size: cover;
 }
 .contact-section {

@@ -4,7 +4,7 @@ const projects = [
     type: "Website",
     description:
       "Personal portfolio website showcasing my projects, skills, and experience in ICT and software development.",
-    image: "./img/portfolio.png",
+    image: "./img/projects/portfolio.png",
     tags: ["HTML", "CSS", "JS"],
     link: "./index.html#hero-landing",
   },
@@ -13,7 +13,7 @@ const projects = [
     type: "Web App",
     description:
       "A simple student tracking system for monitoring academic counseling and students' grade progress, including administrative functions for both students and teachers.",
-    image: "./img/natin-test.jpg",
+    image: "./img/projects/natin-lvs.jpg",
     tags: [
       "React JS",
       "Tailwind CSS",

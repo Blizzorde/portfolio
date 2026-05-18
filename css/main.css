@@ -45,13 +45,13 @@ a {
 }
 
 .divider.orange-blob {
-  background-image: url(../img/test.svg);
+  background-image: url(../img/dividers/orange-divider.svg);
 }
 .divider.gray-blocks {
-  background-image: url(../img/skillset-divider.svg);
+  background-image: url(../img/dividers/skillset-divider.svg);
 }
 .divider.gray-blocks-inv {
-  background-image: url(../img/skillset-divider-inverted.svg);
+  background-image: url(../img/dividers/skillset-divider-inverted.svg);
 }
 
 .section-title {

@@ -1,7 +1,7 @@
 /* MAIN PAGE STYLING */
 
 .main-container.hero {
-  background: url(../img/bg.png);
+  background: url(../img/backgrounds/bg.png);
 }
 
 .main-container.hero::after {
@@ -13,7 +13,7 @@
   bottom: 0;
   left: 0;
   background: no-repeat center;
-  background-image: url(../img/transition-hero-divider.svg);
+  background-image: url(../img/dividers/transition-hero-divider.svg);
   background-size: cover;
   width: 100%;
   z-index: 20;
@@ -148,7 +148,7 @@
 .skillset-container {
   padding: 5rem 5rem;
   background: no-repeat center;
-  background-image: url(../img/skillset-bg.svg);
+  background-image: url(../img/backgrounds/skillset-bg.svg);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -366,7 +366,7 @@
 
 .projects-container {
   padding: 5rem;
-  background: url(../img/bg.png);
+  background: url(../img/backgrounds/bg.png);
 }
 
 .projects-cards-wrapper {
@@ -563,7 +563,7 @@
 
   .projects-container {
     padding: 2rem;
-    background: url(../img/bg.png);
+    background: url(../img/backgrounds/bg.png);
   }
 }
 

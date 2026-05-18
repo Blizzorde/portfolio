@@ -2,7 +2,7 @@
 
 .main-container.about {
   background: no-repeat center;
-  background-image: url(../img/bg-about-main.svg);
+  background-image: url(../img/backgrounds/bg-about-main.svg);
   background-size: cover;
   /* background-color: red; */
   /* overflow: hidden; */
@@ -55,7 +55,7 @@
 }
 
 .about-divider {
-  background-image: url(../img/about-divider.svg);
+  background-image: url(../img/dividers/about-divider.svg);
   background-position: top;
   aspect-ratio: 960/150;
 }
