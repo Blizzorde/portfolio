@@ -1,5 +1,8 @@
 /* MAIN PAGE STYLING / CONTACT */
-
+.main-container.contact {
+  background-image: url(../img/contact.svg);
+  background-size: cover;
+}
 .contact-section {
   padding: 2rem 5rem;
 }
@@ -70,4 +73,26 @@
   border-radius: 1rem;
   border: 1px solid gray;
   padding: 0.5rem 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.social {
+  padding: 1rem;
+  font-size: 2rem;
+  /* background-color: red; */
+}
+
+.connect-section {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.connect-section .title {
+  color: gray;
 }
