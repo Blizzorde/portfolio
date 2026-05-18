@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
 
   const body = `---%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0A---%0D%0A%0D%0AYour Message:%0D%0A${encodeURIComponent(message)}`;
 
-  window.location.href = `mailto:archer.unspoken001@passmail.net?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:archer.spoken001@passmail.net?subject=${subject}&body=${body}`;
 
   form.reset();
 
