@@ -13,6 +13,19 @@ navLinks.forEach((link) => {
   }
 });
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.3 },
+); // 0.1 = trigger when 10% of element is visible
+
+document.querySelectorAll(".animate").forEach((el) => observer.observe(el));
+
 function showToast(message = "Project link not available yet") {
   const toast = document.getElementById("toast");
   toast.textContent = message;
