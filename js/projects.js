@@ -6,7 +6,7 @@ const projects = [
       "A gamified waste management platform for Suriname where users join cleanup missions, earn points, and redeem rewards in a shop system. Built with a Node.js/Express backend and vanilla HTML, CSS, and JavaScript frontend.",
     image: "./img/projects/logo-litterly-light-filled.png",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MySQL", "JWT"],
-    link: "#",
+    link: "https://github.com/blizzorde/litterly",
   },
   {
     title: "Portfolio Site",
@@ -45,7 +45,7 @@ function createHomeCard(project) {
       showToast("Coming Soon! Project link not available yet");
       return;
     }
-    window.location.href = project.link;
+    window.open(project.link, "_blank");
   });
 
   card.innerHTML = `
@@ -69,7 +69,7 @@ function createWorkCard(project) {
       showToast("Coming Soon! Project link not available yet");
       return;
     }
-    window.location.href = project.link;
+    window.open(project.link, "_blank");
   });
 
   card.innerHTML = `
